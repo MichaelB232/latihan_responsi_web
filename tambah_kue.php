@@ -3,7 +3,7 @@ session_start();
 
 include("koneksi.php");
 if (empty($_SESSION['username'])) {
-    header("location:login.php");
+    header("location:login.php?pesan=logindulu");
 }
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $nama = $_POST['nama'];

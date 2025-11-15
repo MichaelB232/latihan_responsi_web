@@ -2,7 +2,7 @@
 session_start();
 include("koneksi.php");
 if (empty($_SESSION['username'])) {
-    header("location:login.php");
+    header("location:login.php?pesan=logindulu");
 }
 $id_kue = $_GET['id'];
 
